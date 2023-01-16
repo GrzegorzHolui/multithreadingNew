@@ -59,9 +59,9 @@ void NcursesShower::drawFrame() {
     }
 
     move(8, 0);
-    printw("'-'  jedzenie");
+    printw("'$'  jedzenie");
     move(9, 0);
-    printw("'$'  filozofowanie");
+    printw("'-'  filozofowanie");
 }
 
 void NcursesShower::drawPhilosophers() {
@@ -79,9 +79,9 @@ void NcursesShower::drawPhilosophers() {
         }
         if (state == wait) {
             move(3 + i * 4, 31);
-            printw("-------Czeka------");
+            printw("----Czeka---");
             move(3 + i * 4, 52);
-//            printw("%1.2f%s", 0.00, "s");
+            printw("%1.2f%s", 0.00, "s");
         } else {
             for (int j = 0; j < 20; j++) {
                 move(3 + i * 4, 31 + j);

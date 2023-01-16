@@ -33,13 +33,12 @@ void Philosopher::setForkRight(Fork *forkRight) {
 }
 
 
-
 void Philosopher::life() {
     while (alive) {
-        int duration = myrand(5000, 10000);
+        int duration = myrand(50000, 100000);
         philosopherTimer = duration;
         state = philosophizes;
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 21; i++) {
             usleep(philosopherTimer);
             progress++;
         }
@@ -48,7 +47,7 @@ void Philosopher::life() {
         forkRight->setBusy(true, philosopherID);
         forkLeft->setBusy(true, philosopherID);
         state = eat;
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 21; i++) {
             usleep(philosopherTimer);
             progress++;
         }

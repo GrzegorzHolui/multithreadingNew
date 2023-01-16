@@ -1,11 +1,12 @@
 # ninja log v5
-1	497	1673862927384649348	CMakeFiles/multithreadingNew.dir/src/main.cpp.o	94326ed325727bcb
-1	257	1673862621306555798	CMakeFiles/multithreadingNew.dir/src/Fork.cpp.o	b8dafc9747688098
-0	36	1673868491281898337	build.ninja	4ffb33f6cf7c9142
-497	576	1673862927460648984	multithreadingNew	c5e5053890230f9a
+1	582	1673869323483723746	CMakeFiles/multithreadingNew.dir/src/main.cpp.o	94326ed325727bcb
+1	350	1673869323255721209	CMakeFiles/multithreadingNew.dir/src/Fork.cpp.o	b8dafc9747688098
+0	21	1673869734760158087	build.ninja	4ffb33f6cf7c9142
+582	653	1673869323555724547	multithreadingNew	1458e815877a05e5
 1	435	1673862927320649655	CMakeFiles/multithreadingNew.dir/src/Painter.cpp.o	18fcbcefa6280a61
 2	389	1673859170866864918	CMakeFiles/multithreadingNew.dir/Painter.cpp.o	aa1ec9a3ec1b4276
 2	278	1673859112433791068	CMakeFiles/multithreadingNew.dir/Fork.cpp.o	a061a538a2d0ff7a
-1	437	1673862621486554363	CMakeFiles/multithreadingNew.dir/src/Philosopher.cpp.o	d339f8dbf570876a
+2	473	1673869323375722545	CMakeFiles/multithreadingNew.dir/src/Philosopher.cpp.o	d339f8dbf570876a
 1	475	1673859170954866538	CMakeFiles/multithreadingNew.dir/main.cpp.o	887bd4a487416b86
 2	386	1673859170866864918	CMakeFiles/multithreadingNew.dir/Philosopher.cpp.o	96f647f3e554fb58
+2	530	1673869323431723167	CMakeFiles/multithreadingNew.dir/src/NcursesShower.cpp.o	7fa3f39bce6da7c3
