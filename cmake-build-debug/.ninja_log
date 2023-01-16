@@ -15,3 +15,8 @@
 1	474	1673876112591541508	CMakeFiles/multithreadingNew.dir/src/NcursesShower.cpp.o	7fa3f39bce6da7c3
 1	556	1673876112671488846	CMakeFiles/multithreadingNew.dir/src/main.cpp.o	94326ed325727bcb
 556	628	1673876112743441451	multithreadingNew	1458e815877a05e5
+2	277	1673877567374434977	CMakeFiles/multithreadingNew.dir/src/Fork.cpp.o	b8dafc9747688098
+2	447	1673877567542443694	CMakeFiles/multithreadingNew.dir/src/Philosopher.cpp.o	d339f8dbf570876a
+1	424	1673877600256143540	CMakeFiles/multithreadingNew.dir/src/NcursesShower.cpp.o	7fa3f39bce6da7c3
+1	504	1673877600336147703	CMakeFiles/multithreadingNew.dir/src/main.cpp.o	94326ed325727bcb
+504	583	1673877600412151658	multithreadingNew	1458e815877a05e5

@@ -10,7 +10,7 @@ public:
     Fork **fork;
     std::vector<Fork *> forks;
 
-    NcursesShower(int amountOfPhilosophers, Philosopher **philosophers, vector<Fork *> fork);
+    NcursesShower(int amountOfPhilosophers, Philosopher **philosophers, std::vector<Fork *> fork);
 
     ~NcursesShower();
 

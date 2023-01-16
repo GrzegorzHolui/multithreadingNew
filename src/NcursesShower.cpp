@@ -1,7 +1,7 @@
 #include "../include/NcursesShower.h"
 #include "ncurses.h"
 
-NcursesShower::NcursesShower(int amountOfPhilosophers, Philosopher **philosopher, vector<Fork *> forks) {
+NcursesShower::NcursesShower(int amountOfPhilosophers, Philosopher **philosopher, std::vector<Fork *> forks) {
     this->amountOfPhilosophers = amountOfPhilosophers;
     this->philosopher = philosopher;
     this->forks = forks;
