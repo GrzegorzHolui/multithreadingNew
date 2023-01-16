@@ -20,17 +20,11 @@ public:
 
     ~Philosopher();
 
-    int getPhilosopherId() const;
-
     double getPhilosopherTimer();
-
-    bool isAlive();
 
     void setAlive(bool alive);
 
     int getProgress();
-
-    void setProgress(int progress);
 
     void setForkLeft(Fork *forkLeft);
 
@@ -38,11 +32,5 @@ public:
 
     int getState();
 
-    void setState(int state);
-
     void life();
-
-    void takeForks();
-
-    void releaseForks();
 };
