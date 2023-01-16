@@ -67,8 +67,8 @@ build CMakeFiles/multithreadingNew.dir/src/Philosopher.cpp.o: CXX_COMPILER__mult
   OBJECT_DIR = CMakeFiles/multithreadingNew.dir
   OBJECT_FILE_DIR = CMakeFiles/multithreadingNew.dir/src
 
-build CMakeFiles/multithreadingNew.dir/src/Painter.cpp.o: CXX_COMPILER__multithreadingNew_Debug /home/grzegorz/CLionProjects/multithreadingNew/src/Painter.cpp || cmake_object_order_depends_target_multithreadingNew
-  DEP_FILE = CMakeFiles/multithreadingNew.dir/src/Painter.cpp.o.d
+build CMakeFiles/multithreadingNew.dir/src/NcursesShower.cpp.o: CXX_COMPILER__multithreadingNew_Debug /home/grzegorz/CLionProjects/multithreadingNew/src/NcursesShower.cpp || cmake_object_order_depends_target_multithreadingNew
+  DEP_FILE = CMakeFiles/multithreadingNew.dir/src/NcursesShower.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/multithreadingNew.dir
   OBJECT_FILE_DIR = CMakeFiles/multithreadingNew.dir/src
@@ -81,7 +81,7 @@ build CMakeFiles/multithreadingNew.dir/src/Painter.cpp.o: CXX_COMPILER__multithr
 #############################################
 # Link the executable multithreadingNew
 
-build multithreadingNew: CXX_EXECUTABLE_LINKER__multithreadingNew_Debug CMakeFiles/multithreadingNew.dir/src/main.cpp.o CMakeFiles/multithreadingNew.dir/src/Fork.cpp.o CMakeFiles/multithreadingNew.dir/src/Philosopher.cpp.o CMakeFiles/multithreadingNew.dir/src/Painter.cpp.o | /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so
+build multithreadingNew: CXX_EXECUTABLE_LINKER__multithreadingNew_Debug CMakeFiles/multithreadingNew.dir/src/main.cpp.o CMakeFiles/multithreadingNew.dir/src/Fork.cpp.o CMakeFiles/multithreadingNew.dir/src/Philosopher.cpp.o CMakeFiles/multithreadingNew.dir/src/NcursesShower.cpp.o | /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so
   FLAGS = -g
   LINK_LIBRARIES = -lcurses  /usr/lib/x86_64-linux-gnu/libform.so
   OBJECT_DIR = CMakeFiles/multithreadingNew.dir

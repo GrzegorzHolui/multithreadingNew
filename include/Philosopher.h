@@ -15,6 +15,7 @@ public:
     //0 filozofuje, 1 je, 2 czeka
     std::atomic<int> state;
 
+
 public:
     Philosopher(int id);
 

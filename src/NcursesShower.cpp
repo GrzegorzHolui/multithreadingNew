@@ -36,17 +36,14 @@ void NcursesShower::draw() {
 }
 
 void NcursesShower::drawFrame() {
-
     move(1, 37);
     printw("Filozofowie");
     move(1, 66);
     printw("Widelce");
 
     for (int i = 0; i < amountOfPhilosophers; i++) {
-
         move(3 + i * 4, 27);
         addch(i + '0');
-
         attron(COLOR_PAIR((i % 6) + 1));
         move(3 + i * 4, 30);
         addch('[');
@@ -62,9 +59,9 @@ void NcursesShower::drawFrame() {
     }
 
     move(8, 0);
-    printw("'+' - jedzenie");
+    printw("'-'  jedzenie");
     move(9, 0);
-    printw("'#' - filozofowanie");
+    printw("'$'  filozofowanie");
 }
 
 void NcursesShower::drawPhilosophers() {
@@ -74,21 +71,20 @@ void NcursesShower::drawPhilosophers() {
         int state = philosopher[i]->getState();
         double timer = philosopher[i]->getPhilosopherTimer();
         char c;
-
-        if (state == 0)
-            c = '#';
-        else
-            c = '+';
-
+        std::string printWait = "--------Czeka-------";
+        if (state == 0) {
+            c = '-';
+        } else {
+            c = '$';
+        }
         if (state == 2) {
             move(3 + i * 4, 31);
-            printw("--------Czeka-------");
+            printw("-------Czeka------");
             move(3 + i * 4, 52);
 //            printw("%1.2f%s", 0.00, "s");
         } else {
             for (int j = 0; j < 20; j++) {
                 move(3 + i * 4, 31 + j);
-
                 if (progress > j) {
                     addch(c);
                 } else {

@@ -36,10 +36,9 @@ int Philosopher::getState() {
     return state;
 }
 
-//0 filozofuje, 1 je, 2 czeka
 void Philosopher::life() {
     while (alive) {
-        int duration = myrand(5000, 20000);
+        int duration = myrand(5000, 10000);
         philosopherTimer = duration;
         state = 0;
         for (int i = 0; i < 50; i++) {

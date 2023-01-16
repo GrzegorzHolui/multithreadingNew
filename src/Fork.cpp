@@ -1,6 +1,6 @@
 #include "../include/Fork.h"
 
-Fork::Fork() : busy(false), philosopherID(-1) {}
+Fork::Fork() : busy(false) {}
 
 bool Fork::isBusy() const {
     return busy;
