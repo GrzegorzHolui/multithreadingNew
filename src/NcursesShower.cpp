@@ -68,16 +68,16 @@ void NcursesShower::drawPhilosophers() {
     for (int i = 0; i < amountOfPhilosophers; i++) {
         attron(COLOR_PAIR((i % 6) + 1));
         int progress = philosopher[i]->getProgress();
-        int state = philosopher[i]->getState();
+        State state = philosopher[i]->getState();
         double timer = philosopher[i]->getPhilosopherTimer();
         char c;
         std::string printWait = "--------Czeka-------";
-        if (state == 0) {
+        if (state == philosophizes) {
             c = '-';
         } else {
             c = '$';
         }
-        if (state == 2) {
+        if (state == wait) {
             move(3 + i * 4, 31);
             printw("-------Czeka------");
             move(3 + i * 4, 52);

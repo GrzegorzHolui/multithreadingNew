@@ -1,7 +1,7 @@
 # ninja log v5
 1	497	1673862927384649348	CMakeFiles/multithreadingNew.dir/src/main.cpp.o	94326ed325727bcb
 1	257	1673862621306555798	CMakeFiles/multithreadingNew.dir/src/Fork.cpp.o	b8dafc9747688098
-0	36	1673865332005845436	build.ninja	4ffb33f6cf7c9142
+0	36	1673868491281898337	build.ninja	4ffb33f6cf7c9142
 497	576	1673862927460648984	multithreadingNew	c5e5053890230f9a
 1	435	1673862927320649655	CMakeFiles/multithreadingNew.dir/src/Painter.cpp.o	18fcbcefa6280a61
 2	389	1673859170866864918	CMakeFiles/multithreadingNew.dir/Painter.cpp.o	aa1ec9a3ec1b4276

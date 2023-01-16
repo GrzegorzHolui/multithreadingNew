@@ -1,7 +1,9 @@
 #pragma once
 
 #include "Fork.h"
+#include "State.h"
 #include <random>
+
 
 class Philosopher {
 public:
@@ -12,8 +14,10 @@ public:
     int progress;
     Fork *forkLeft;
     Fork *forkRight;
+    State state;
+
     //0 filozofuje, 1 je, 2 czeka
-    std::atomic<int> state;
+    enum State getState() const;
 
 
 public:
@@ -30,8 +34,6 @@ public:
     void setForkLeft(Fork *forkLeft);
 
     void setForkRight(Fork *forkRight);
-
-    int getState();
 
     void life();
 };

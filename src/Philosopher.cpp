@@ -12,7 +12,7 @@ int myrand(int min, int max) {
 Philosopher::Philosopher(int philosopherID) {
     this->philosopherID = philosopherID;
     alive = true;
-    state = 0;
+    state = philosophizes;
     progress = 0;
 }
 
@@ -32,24 +32,22 @@ void Philosopher::setForkRight(Fork *forkRight) {
     this->forkRight = forkRight;
 }
 
-int Philosopher::getState() {
-    return state;
-}
+
 
 void Philosopher::life() {
     while (alive) {
         int duration = myrand(5000, 10000);
         philosopherTimer = duration;
-        state = 0;
+        state = philosophizes;
         for (int i = 0; i < 50; i++) {
             usleep(philosopherTimer);
             progress++;
         }
         progress = 0;
-        state = 2;
+        state = wait;
         forkRight->setBusy(true, philosopherID);
         forkLeft->setBusy(true, philosopherID);
-        state = 1;
+        state = eat;
         for (int i = 0; i < 50; i++) {
             usleep(philosopherTimer);
             progress++;
@@ -62,4 +60,8 @@ void Philosopher::life() {
 
 double Philosopher::getPhilosopherTimer() {
     return philosopherTimer;
+}
+
+State Philosopher::getState() const {
+    return state;
 }

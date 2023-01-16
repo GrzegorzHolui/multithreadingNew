@@ -5,5 +5,5 @@ project(multithreading)
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 
-add_executable(multithreadingNew src/main.cpp src/Fork.cpp include/Fork.h src/Philosopher.cpp include/Philosopher.h src/NcursesShower.cpp include/NcursesShower.h)
+add_executable(multithreadingNew src/main.cpp src/Fork.cpp include/Fork.h src/Philosopher.cpp include/Philosopher.h src/NcursesShower.cpp include/NcursesShower.h include/State.h)
 target_link_libraries(multithreadingNew ${CURSES_LIBRARIES})

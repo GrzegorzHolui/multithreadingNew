@@ -20,6 +20,7 @@ int main() {
         Fork *fork = new Fork();
         forks.push_back(std::move(fork));
     }
+
     for (int i = 0; i < amountOfPhilosophers; i++) {
         int leftFork = i;
         int rightFork = (i + 1) % amountOfPhilosophers;
