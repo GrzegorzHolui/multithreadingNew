@@ -9,12 +9,12 @@
 
 int main() {
     int amountOfPhilosophers = 5;
-    cout << "Podaj liczbę wątków: ";
-    cin >> amountOfPhilosophers;
+    std::cout << "Podaj liczbę wątków: ";
+    std::cin >> amountOfPhilosophers;
 
     auto **philosophers = new Philosopher *[amountOfPhilosophers];
     std::vector<Fork *> forks;
-    auto *threads = new thread[amountOfPhilosophers];
+    auto *threads = new std::thread[amountOfPhilosophers];
 
     for (int i = 0; i < amountOfPhilosophers; i++) {
         Fork *fork = new Fork();
@@ -25,8 +25,8 @@ int main() {
         int leftFork = i;
         int rightFork = (i + 1) % amountOfPhilosophers;
         philosophers[i] = new Philosopher(i);
-        philosophers[i]->setForkRight(forks.at(rightFork));
         philosophers[i]->setForkLeft(forks.at(leftFork));
+        philosophers[i]->setForkRight(forks.at(rightFork));
         threads[i] = std::thread(&Philosopher::life, philosophers[i]);
     }
 

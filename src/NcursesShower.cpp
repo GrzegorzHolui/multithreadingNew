@@ -1,8 +1,6 @@
 #include "../include/NcursesShower.h"
 #include "ncurses.h"
 
-using namespace std;
-
 NcursesShower::NcursesShower(int amountOfPhilosophers, Philosopher **philosopher, vector<Fork *> forks) {
     this->amountOfPhilosophers = amountOfPhilosophers;
     this->philosopher = philosopher;

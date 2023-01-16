@@ -1,8 +1,6 @@
 #ifndef MULTITHREADINGNEW_FORK_H
 #define MULTITHREADINGNEW_FORK_H
 
-
-#include <atomic>
 #include <mutex>
 #include <condition_variable>
 
@@ -12,11 +10,10 @@ private:
     bool busy;
     int philosopherID;
 
-    std::mutex forkMutexToLock;
+    std::mutex forkToLock;
     std::condition_variable condition_variable;
 
 public:
-
 
     bool isBusy() const;
 

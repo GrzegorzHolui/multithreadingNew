@@ -2,11 +2,10 @@
 #include <unistd.h>
 #include <random>
 
-using namespace std;
 
 int myrand(int min, int max) {
-    static mt19937 rnd(time(nullptr));
-    return uniform_int_distribution<>(min, max)(rnd);
+    static std::mt19937 rnd(time(nullptr));
+    return std::uniform_int_distribution<>(min, max)(rnd);
 }
 
 Philosopher::Philosopher(int philosopherID) {
@@ -44,16 +43,16 @@ void Philosopher::life() {
         }
         progress = 0;
         state = wait;
-        forkRight->setBusy(true, philosopherID);
         forkLeft->setBusy(true, philosopherID);
+        forkRight->setBusy(true, philosopherID);
         state = eat;
         for (int i = 0; i < 21; i++) {
             usleep(philosopherTimer);
             progress++;
         }
         progress = 0;
-        forkLeft->setBusy(false, philosopherID);
         forkRight->setBusy(false, philosopherID);
+        forkLeft->setBusy(false, philosopherID);
     }
 }
 

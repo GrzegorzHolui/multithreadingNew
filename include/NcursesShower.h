@@ -2,7 +2,6 @@
 
 #include "Philosopher.h"
 
-using namespace std;
 
 class NcursesShower {
 public:
