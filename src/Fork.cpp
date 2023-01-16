@@ -6,7 +6,6 @@ bool Fork::isBusy() const {
     return busy;
 }
 
-
 void Fork::setBusy(bool busy, int philosopherID) {
     if (!busy) {
         std::unique_lock<std::mutex> l(forkToLock);
@@ -16,7 +15,9 @@ void Fork::setBusy(bool busy, int philosopherID) {
         condition_variable.notify_all();
     } else {
         std::unique_lock<std::mutex> l(forkToLock);
-        condition_variable.wait(l, [this]() { return this->busy == false; });
+        while (this->busy) {
+            condition_variable.wait(l);
+        }
         this->philosopherID = philosopherID;
         this->busy = busy;
         l.unlock();
