@@ -35,5 +35,5 @@ public:
 
     void setForkRight(Fork *forkRight);
 
-    void life();
+    void start();
 };

@@ -27,7 +27,7 @@ int main() {
         philosophers[i] = new Philosopher(i);
         philosophers[i]->setForkLeft(forks.at(leftFork));
         philosophers[i]->setForkRight(forks.at(rightFork));
-        threads[i] = std::thread(&Philosopher::life, philosophers[i]);
+        threads[i] = std::thread(&Philosopher::start, philosophers[i]);
     }
 
     NcursesShower ncursesShower = NcursesShower(amountOfPhilosophers, philosophers, forks);

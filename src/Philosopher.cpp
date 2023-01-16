@@ -32,7 +32,7 @@ void Philosopher::setForkRight(Fork *forkRight) {
 }
 
 
-void Philosopher::life() {
+void Philosopher::start() {
     while (alive) {
         int duration = myrand(50000, 100000);
         philosopherTimer = duration;
